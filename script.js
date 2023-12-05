@@ -1,13 +1,12 @@
-let button = document.querySelector(".Generate-button");
+$( "h1" ).addClass("show");
 let number = document.querySelector(".number");
 
-function getRandomNumber(  min, max ){   
-    let numberArray=[];
-    for (i = 0 ; i <= 100; i++ ){
-        numberArray[i]=Math.floor(Math.random(),0+ i);
-
-    }
+function getRandomNumber(){
     
-    return numberArray
-    
+    let min = 0;
+    let max = 100;    
+    let counter = Math.floor(Math.random()*(max-min+1)+min);
+    number.textContent = counter;
+   
 }
+

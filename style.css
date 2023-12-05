@@ -1,3 +1,17 @@
 .show {
     display:none;
 }
+
+.progress-bar {
+    font-size: 50px;  
+    background-color:aqua;
+}
+.items {
+    display:flex;
+    justify-content:space-around;
+    list-style-type: none;
+}
+
+.like {
+    
+}

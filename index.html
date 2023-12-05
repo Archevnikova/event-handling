@@ -12,7 +12,7 @@
          <section class = "section-random-number">
             <h1>1.Random number</h1>
             <div class="number"></div>
-            <button class="Generate-button" type ="button">Generate random number</button>
+            <button class="generate-button" type ="button" onclick="getRandomNumber()">Generate random number</button>
          </section>
          <section class="section-hide-text">
             <p>3</p>
@@ -20,10 +20,46 @@
             <p class="text show" >Создать html-страницу, на которой будет кнопка и текст. При
                 нажатии на кнопку, текст должен скрываться. При повторном нажатии – текст должен снова отображаться. </p>
          </section>
+         <section class="section-progressbar">
+            <p> Задание 6. Создать html-страницу с progressbar и кнопкой, при нажатии
+                на которую заполненность progressbar увеличивается на 5%.</p>
+                <progress class="progress-bar"value="5"max ="100" ></progress>
+                <br><button class ="buttonPlus"type="button">Add 5 persent</button>
+         </section>
+         <section class="section-like">
+            <p>Задание 9.Создать html-страницу с кнопкой Like, при нажатии на которую увеличивается счетчик лайков.</p>
+                <button class="likes add" type="button" value="like">Like <span class="likes-number">  0 </span></button>
+         </section>
+         <section class="section-select">
+            <p>Задание 10
+                Создать html-страницу с меню, которое имеет выпадающие 
+                списки. Список с элементами подменю должен появляться по 
+                щелчку на соответствующий элемент меню</p>
+            <nav>
+                <ul class="items">
+                    <li>Home</li>
+                    <select name ="select-categories">
+                        <option>Categories</option>
+                        <option>Dress</option>
+                        <option>Shirts</option>
+                        <option>Jeans</option>
+                        <option>Shoes</option>
+                    </select>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+         </section>
     </main>
     <footer>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
     <script src="script.js" ></script>
     <script src="hide-text.js"></script>
+    <script src = "progressbar.js"></script>
+    <script src = "like.js"></script>
+    
 </body>
 </html>
